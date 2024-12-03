@@ -5,10 +5,8 @@ set (CMAKE_CXX_STANDARD 20) #Sets C++ standard to C++20
 FIND_PACKAGE( Boost 1.40 COMPONENTS program_options REQUIRED ) #Need Boost for r-tree
 INCLUDE_DIRECTORIES(include) #Find the Headers
 
-#Find ESCAPE
-FIND_LIBRARY(LIB_ESCAPE libescape
-	PATH path/to/escape
-) 
+#Find ESCAPE -- modify if needed
+FIND_LIBRARY(LIB_ESCAPE libescape)
 
 file(GLOB SOURCES "src/*.cpp") #Add .cpp files
 
