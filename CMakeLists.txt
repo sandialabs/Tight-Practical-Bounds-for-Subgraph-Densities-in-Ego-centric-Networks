@@ -7,7 +7,7 @@ INCLUDE_DIRECTORIES(include) #Find the Headers
 
 #Find ESCAPE
 FIND_LIBRARY(LIB_ESCAPE libescape
-	PATH /Users/clmatte/Desktop/escape
+	PATH path/to/escape
 ) 
 
 file(GLOB SOURCES "src/*.cpp") #Add .cpp files
